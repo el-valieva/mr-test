@@ -1,0 +1,145 @@
+.container {
+	max-width: $desktop-width;
+	margin: 0 auto;
+}
+
+.item {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 40rem 47rem;
+	grid-gap: 15rem;
+	justify-content: center;
+	margin-left: 10rem;
+
+	@media only screen and (max-width: $bp-large) {
+		grid-template-columns: 35rem 40rem;
+		grid-gap: 8rem;
+	}
+
+	@media only screen and (max-width: $bp-medium) {
+		grid-template-columns: 30rem 35rem;
+		grid-gap: 2rem;
+	}
+
+	@media only screen and (max-width: $bp-small) {
+		grid-template-rows: repeat(2, 1fr);
+		grid-template-columns: 40rem;
+		grid-gap: 3rem;
+		margin-left: 0;
+	}
+
+	&__img {
+		grid-row: 1 / 2;
+		grid-column: 1 / 2;
+		height: 60rem;
+
+		@media only screen and (max-width: $bp-large) {
+			height: 50rem;
+		}
+
+		@media only screen and (max-width: $bp-medium) {
+			height: 40rem;
+		}
+
+		@media only screen and (max-width: $bp-small) {
+			grid-row: 1 / 2;
+			grid-column: 1 / 2;
+			height: 50rem;
+			justify-self: center;
+		}
+
+		@media only screen and (max-width: $bp-small-3) {
+			height: 40rem;
+		}
+
+		//@media only screen and (max-width: $bp-small-4) {
+		//	height: 35rem;
+		//}
+	}
+
+	&__description {
+		grid-row: 1 / 2;
+		grid-column: 2 / 3;
+		justify-content: start;
+
+		@media only screen and (max-width: $bp-small) {
+			grid-row: 2 / 3;
+			grid-column: 1 / 2;
+		}
+
+		&--header {
+			font-size: 2rem;
+			color: $font-dark-grey;
+			font-weight: normal;
+			margin-bottom: 1.5rem;
+		}
+
+		&--line {
+			border: none;
+			background-color: $background-header;
+			height: 1px;
+		}
+
+		&--price {
+			font-size: 1.2rem;
+			margin: 1rem 0;
+			font-weight: bold;
+		}
+
+		&--text {
+			font-size: 1.2rem;
+			color: $font-light-grey;
+			line-height: 2;
+			padding-top: 1.5rem;
+		}
+
+		&__size {
+			margin-top: 2rem;
+			text-transform: uppercase;
+			color: $font-light-grey;
+			letter-spacing: 1px;
+			font-weight: bold;
+
+			&--star {
+				color: $star-color;
+			}
+			&--value {
+				color: $font-dark-grey;
+				font-weight: bolder;
+			}
+		}
+
+		&__sizeBox {
+			display: flex;
+			margin-top: 1.5rem;
+
+
+			&--item {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 4rem;
+				height: 4rem;
+				border: 2px solid $font-light-grey-2;
+				margin-right: 1rem;
+				font-size: 1.2rem;
+				color: $font-light-grey-2;
+			}
+
+		}
+
+		&--button {
+			display: block;
+			margin-top: 2rem;
+			text-transform: uppercase;
+			font-size: 1.5rem;
+			color: $font-dark-grey;
+			letter-spacing: 1px;
+			font-weight: bold;
+			background-color: white;
+			border: 2px solid $font-dark-grey;
+			padding: 0.8rem 1.2rem;
+		}
+	}
+}
+
