@@ -18,10 +18,31 @@
 				<a href="#" class="header__cart__link">
 					<span class="header__cart__link--text">My Cart</span>
 					<img src="img/cart.svg" alt="cart" class="header__cart__link--icon">
-					<span class="header__cart__link--count">(4)</span>
+					<span class="header__cart__link--count">( 4 )</span>
 				</a>
+				<div class="header__cart__cartContent">
+					<div class="header__cart__cartContent__item">
+						<div><img src="img/classic-tee.jpg" alt="#" class="header__cart__cartContent__item--img"></div>
+						<div class="header__cart__cartContent__item__parameters">
+							<h2 class="header__cart__cartContent__item__parameters--header">Classic Tee</h2>
+							<span class="header__cart__cartContent__item__parameters--amount">1x</span>
+							<span class="header__cart__cartContent__item__parameters--price">$75.00</span>
+							<p class="header__cart__cartContent__item__parameters--size">Size: S</p>
+						</div>
+					</div>
+					<div class="header__cart__cartContent__item">
+						<div><img src="img/classic-tee.jpg" alt="#" class="header__cart__cartContent__item--img"></div>
+						<div class="header__cart__cartContent__item__parameters">
+							<h2 class="header__cart__cartContent__item__parameters--header">Classic Tee</h2>
+							<span class="header__cart__cartContent__item__parameters--amount">1x</span>
+							<span class="header__cart__cartContent__item__parameters--price">$75.00</span>
+							<p class="header__cart__cartContent__item__parameters--size">Size: S</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</header>
+
 
 		<article class="item">
 			<img src="img/classic-tee.jpg" alt="photo" class="item__img">
@@ -37,9 +58,12 @@
 				</p>
 				<p class="item__description__size">Size<span class="item__description__size--star">*</span> <span	class="item__description__size--value">S</span></p>
 				<div class="item__description__sizeBox">
-					<div class="item__description__sizeBox--item">S</div>
-					<div class="item__description__sizeBox--item">M</div>
-					<div class="item__description__sizeBox--item">L</div>
+					<input type="radio" value="S" name="size" id="S">
+					<label for="S" class="item__description__sizeBox--item">S</label>
+					<input type="radio" value="M" name="size" id="M">
+					<label for="M" class="item__description__sizeBox--item">M</label>
+					<input type="radio" value="L" name="size" id="L">
+					<label for="L" class="item__description__sizeBox--item">L</label>
 				</div>
 
 				<button class="item__description--button">Add to cart</button>

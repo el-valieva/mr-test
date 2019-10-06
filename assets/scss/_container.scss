@@ -126,6 +126,14 @@
 				color: $font-light-grey-2;
 			}
 
+			input {
+				display: none;
+			}
+
+			input:checked + label {
+				border: 2px solid $font-dark-grey;
+				color: $font-dark-grey;
+			}
 		}
 
 		&--button {
@@ -136,9 +144,21 @@
 			color: $font-dark-grey;
 			letter-spacing: 1px;
 			font-weight: bold;
-			background-color: white;
+			background-color: $color-white;
 			border: 2px solid $font-dark-grey;
 			padding: 0.8rem 1.2rem;
+			cursor: pointer;
+			transition: all .2s;
+
+			&:hover {
+				color: $color-white;
+				background-color: $font-dark-grey;
+				transition: all .2s;
+				transform: translateY(-3px);
+				box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+			}
+			&:active {
+				transform: translateY(-1px); }
 		}
 	}
 }

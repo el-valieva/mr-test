@@ -1,4 +1,7 @@
 // COLOR VARIABLES
+
+$color-white: #fff;
+
 $background-header: #F6F6F7;
 
 $font-light-grey: #888888;
@@ -20,6 +23,7 @@ $bp-small: 51.25em; //820px
 $bp-small-2: 42.5em; //680px
 $bp-small-3: 42.5em; //620px
 $bp-small-4: 30em; //480px
+$bp-small-5: 20em; //320px
 
 *,
 *::before,
@@ -53,6 +57,7 @@ html {
 	@media only screen and (max-width: $bp-small-4) {
 		font-size: 2.2vw;
 	}
+
 }
 
 body {
@@ -69,4 +74,8 @@ p {
 
 a {
 	text-decoration: none;
+}
+
+button {
+	outline: none;
 }
