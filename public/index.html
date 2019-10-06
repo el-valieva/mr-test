@@ -7,7 +7,12 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
-<!--	<link rel="icon" type="image/png" href="img/aboutMacroIconColour.png">-->
+	<script
+			src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			crossorigin="anonymous">
+	</script>
+	<script src="js/index.js"></script>
 	<title>Online Shop</title>
 </head>
 
@@ -21,22 +26,13 @@
 					<span class="header__cart__link--count">( 4 )</span>
 				</a>
 				<div class="header__cart__cartContent">
-					<div class="header__cart__cartContent__item">
+					<div class="header__cart__cartContent__item header__cart__cartContent__item--hidden">
 						<div><img src="img/classic-tee.jpg" alt="#" class="header__cart__cartContent__item--img"></div>
 						<div class="header__cart__cartContent__item__parameters">
-							<h2 class="header__cart__cartContent__item__parameters--header">Classic Tee</h2>
-							<span class="header__cart__cartContent__item__parameters--amount">1x</span>
-							<span class="header__cart__cartContent__item__parameters--price">$75.00</span>
-							<p class="header__cart__cartContent__item__parameters--size">Size: S</p>
-						</div>
-					</div>
-					<div class="header__cart__cartContent__item">
-						<div><img src="img/classic-tee.jpg" alt="#" class="header__cart__cartContent__item--img"></div>
-						<div class="header__cart__cartContent__item__parameters">
-							<h2 class="header__cart__cartContent__item__parameters--header">Classic Tee</h2>
-							<span class="header__cart__cartContent__item__parameters--amount">1x</span>
-							<span class="header__cart__cartContent__item__parameters--price">$75.00</span>
-							<p class="header__cart__cartContent__item__parameters--size">Size: S</p>
+							<h2 class="header__cart__cartContent__item__parameters--header"></h2>
+							<span class="header__cart__cartContent__item__parameters--amount"><span>1</span>x</span>
+							<span class="header__cart__cartContent__item__parameters--price">&#36;<span></span></span>
+							<p class="header__cart__cartContent__item__parameters--size">Size: <span></span></p>
 						</div>
 					</div>
 				</div>
@@ -49,14 +45,17 @@
 			<section class="item__description">
 				<h1 class="item__description--header">Classic Tee</h1>
 				<hr class="item__description--line">
-				<p class="item__description--price">&#36;75.00</p>
+				<p class="item__description--price">&#36;<span>75.00</span></p>
 				<hr class="item__description--line">
 				<p class="item__description--text">Elit ut aliquam purus sit amet luctus venenatis lectus.
 					Et tortor at risus viverra adipiscing at in tellus. Augue lacus viverra vitae congue eu consequat.
 					Urna molestie at elementum eu. Neque volutpat ac tincidunt vitae semper quis lectus nulla.
 					Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque.
 				</p>
-				<p class="item__description__size">Size<span class="item__description__size--star">*</span> <span	class="item__description__size--value">S</span></p>
+				<p class="item__description__size">
+					Size<span class="item__description__size--star">*</span>
+					<span class="item__description__size--value"></span>
+				</p>
 				<div class="item__description__sizeBox">
 					<input type="radio" value="S" name="size" id="S">
 					<label for="S" class="item__description__sizeBox--item">S</label>

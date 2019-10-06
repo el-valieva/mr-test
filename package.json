@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node_modules/node-sass/bin/node-sass --watch assets/scss -o public/css"
   },
-  "author": "",
+  "author": "Elena Valieva",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^4.12.0"

@@ -109,6 +109,8 @@ button {
       .header__cart__cartContent__item {
         margin: 2rem 2rem 3.5rem 2rem;
         display: flex; }
+        .header__cart__cartContent__item--hidden {
+          display: none; }
         .header__cart__cartContent__item--img {
           height: 12rem; }
         .header__cart__cartContent__item__parameters {
