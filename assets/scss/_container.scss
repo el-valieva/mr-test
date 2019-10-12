@@ -67,26 +67,26 @@
 			grid-column: 1 / 2;
 		}
 
-		&--header {
+		&__header {
 			font-size: 2rem;
 			color: $font-dark-grey;
 			font-weight: normal;
 			margin-bottom: 1.5rem;
 		}
 
-		&--line {
+		&__line {
 			border: none;
 			background-color: $background-header;
 			height: 1px;
 		}
 
-		&--price {
+		&__price {
 			font-size: 1.2rem;
 			margin: 1rem 0;
 			font-weight: bold;
 		}
 
-		&--text {
+		&__text {
 			font-size: 1.2rem;
 			color: $font-light-grey;
 			line-height: 2;
@@ -100,10 +100,10 @@
 			letter-spacing: 1px;
 			font-weight: bold;
 
-			&--star {
+			&__star {
 				color: $star-color;
 			}
-			&--value {
+			&__value {
 				color: $font-dark-grey;
 				font-weight: bolder;
 			}
@@ -136,7 +136,7 @@
 			}
 		}
 
-		&--button {
+		&__button {
 			display: block;
 			margin-top: 2rem;
 			text-transform: uppercase;
